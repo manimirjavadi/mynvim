@@ -15,6 +15,9 @@ keymap.set("n", "<Leader>D", '"_D')
 keymap.set("v", "<Leader>d", '"_d')
 keymap.set("v", "<Leader>D", '"_D')
 
+-- LazyGit
+keymap.set("n", "<Leader>lg", "<cmd>LazyGit<cr>", opts)
+
 -- Delete a word backwards
 keymap.set("n", "dw", 'vb"_d')
 
