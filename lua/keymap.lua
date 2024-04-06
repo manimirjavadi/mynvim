@@ -15,6 +15,9 @@ keymap.set("n", "<Leader>D", '"_D')
 keymap.set("v", "<Leader>d", '"_d')
 keymap.set("v", "<Leader>D", '"_D')
 
+--Terminal
+keymap.set("n", "<C-_>", ":vsp term://$SHELL<CR>", opts)
+
 -- LazyGit
 keymap.set("n", "<Leader>lg", "<cmd>LazyGit<cr>", opts)
 
