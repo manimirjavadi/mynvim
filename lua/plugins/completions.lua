@@ -11,6 +11,7 @@ return {
 	},
 	{
 		"hrsh7th/nvim-cmp",
+		dependencies= { "hrsh7th/cmp-emoji" },
 		config = function()
 			local cmp = require("cmp")
 			require("luasnip.loaders.from_vscode").lazy_load()
