@@ -27,3 +27,4 @@ vim.opt.splitright = true
 vim.opt.splitkeep = "cursor"
 vim.opt.mouse=""
 vim.api.nvim_set_option("clipboard", "unnamed")
+vim.o.cmdheight=0
