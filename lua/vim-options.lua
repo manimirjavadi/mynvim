@@ -2,10 +2,26 @@ vim.cmd("set expandtab")
 vim.cmd("set tabstop=2")
 vim.cmd("set softtabstop=2")
 vim.cmd("set shiftwidth=2")
+vim.cmd("set cmdheight=0")
 vim.cmd("set laststatus=3")
 vim.cmd("set noshowcmd")
+vim.cmd("set cursorline")
 vim.g.mapleader = " "
+vim.opt.mouse = ""
+vim.opt.splitright = true
+vim.opt.splitbelow = true
+vim.opt.splitkeep = "cursor"
+vim.opt.title = true
+vim.opt.autoindent = true
+vim.opt.smartindent = true
+vim.opt.breakindent = true
+vim.opt.wrap = false
+vim.opt.shell = "fish"
+vim.opt.backspace = { "start", "eol", "indent" }
+vim.opt.path:append({ "**" })
+vim.opt.wildignore:append("*/node_modules/*")
 vim.g.background = "light"
+vim.api.nvim_set_option("clipboard", "unnamed")
 
 vim.opt.swapfile = false
 
