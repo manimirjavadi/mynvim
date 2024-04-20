@@ -6,6 +6,7 @@ vim.cmd("set cmdheight=0")
 vim.cmd("set laststatus=3")
 vim.cmd("set noshowcmd")
 vim.cmd("set cursorline")
+vim.cmd("set scrolloff=5")
 vim.g.mapleader = " "
 vim.opt.mouse = ""
 vim.opt.splitright = true
@@ -15,6 +16,9 @@ vim.opt.title = true
 vim.opt.autoindent = true
 vim.opt.smartindent = true
 vim.opt.breakindent = true
+vim.opt.number = true
+vim.opt.relativenumber = true
+vim.opt.signcolumn = "number"
 vim.opt.wrap = false
 vim.opt.shell = "fish"
 vim.opt.backspace = { "start", "eol", "indent" }
@@ -32,4 +36,3 @@ vim.keymap.set("n", "<c-h>", ":wincmd h<CR>")
 vim.keymap.set("n", "<c-l>", ":wincmd l<CR>")
 
 vim.keymap.set("n", "<leader>h", ":nohlsearch<CR>")
-vim.wo.number = true
