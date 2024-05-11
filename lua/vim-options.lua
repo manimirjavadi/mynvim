@@ -6,7 +6,7 @@ vim.cmd("set cmdheight=0")
 vim.cmd("set laststatus=3")
 vim.cmd("set noshowcmd")
 vim.cmd("set cursorline")
-vim.cmd("set scrolloff=5")
+vim.cmd("set scrolloff=10")
 vim.g.mapleader = " "
 vim.opt.mouse = ""
 vim.opt.splitright = true
