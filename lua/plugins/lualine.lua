@@ -7,13 +7,13 @@ return {
 
     -- stylua: ignore
     local colors = {
-      blue   = '#80a0ff',
-      cyan   = '#79dac8',
-      black  = '#080808',
-      white  = '#c6c6c6',
-      red    = '#ff5189',
-      violet = '#d183e8',
-      grey   = '#303030',
+      blue   = '#7E9CD8',
+      cyan   = '#9CABCA',
+      black  = '#1a1a1a',
+      white  = '#DCD7BA',
+      red    = '#C34043',
+      violet = '#957FB8',
+      grey   = '#727169',
     }
 
 		local bubbles_theme = {

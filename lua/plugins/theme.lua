@@ -1,9 +1,6 @@
 return {
-	"navarasu/onedark.nvim",
+	"rebelot/kanagawa.nvim",
 	config = function()
-		require("onedark").setup({
-			style = "deep",
-		})
-		require("onedark").load()
+		require("kanagawa").load("dragon")
 	end,
 }

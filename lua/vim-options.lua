@@ -25,7 +25,6 @@ vim.opt.path:append({ "**" })
 vim.opt.wildignore:append("*/node_modules/*")
 vim.g.background = "light"
 vim.api.nvim_set_option("clipboard", "unnamed")
-
 vim.opt.swapfile = false
 
 -- Navigate vim panes better
