@@ -76,6 +76,9 @@ return {
 			vim.api.nvim_set_keymap("n", "<Tab>", ":bnext<CR>", { noremap = true, silent = true })
 			vim.api.nvim_set_keymap("n", "<S-Tab>", ":bprev<CR>", { noremap = true, silent = true })
 			vim.api.nvim_set_keymap("n", "<leader>bd", ":bdelete<CR>", { noremap = true, silent = true })
+			vim.api.nvim_set_keymap("n", "<leader>br", ":BufferLineCloseRight<CR>", { noremap = true, silent = true })
+			vim.api.nvim_set_keymap("n", "<leader>bl", ":BufferLineCloseLeft<CR>", { noremap = true, silent = true })
+			vim.api.nvim_set_keymap("n", "<leader>ba", ":BufferLineCloseOthers<CR>", { noremap = true, silent = true })
 		end,
 	},
 }

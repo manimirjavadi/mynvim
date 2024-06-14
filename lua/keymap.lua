@@ -15,12 +15,6 @@ keymap.set("n", "<Leader>D", '"_D')
 keymap.set("v", "<Leader>d", '"_d')
 keymap.set("v", "<Leader>D", '"_D')
 
--- Navigating between panes
-vim.keymap.set('n', "<c-k>", ":wincmd k<CR>")
-vim.keymap.set('n', "<c-j>", ":wincmd j<CR>")
-vim.keymap.set('n', "<c-h>", ":wincmd h<CR>")
-vim.keymap.set('n', "<c-l>", ":wincmd l<CR>")
-
 --Terminal
 keymap.set("n", "<C-_>", ":vsp term://$SHELL<CR>", opts)
 
@@ -38,32 +32,32 @@ keymap.set("n", "<C-m>", "<C-i>", opts)
 
 -- Function to move lines up
 local function move_line_up()
-	if vim.fn.mode() == "v" then
-		vim.cmd("m .-2")
-		vim.cmd("normal! gv")
-	else
-		vim.cmd("m .-2")
-	end
+  if vim.fn.mode() == "v" then
+    vim.cmd("m .-2")
+    vim.cmd("normal! gv")
+  else
+    vim.cmd("m .-2")
+  end
 end
 
 -- Function to move lines down
 local function move_line_down()
-	if vim.fn.mode() == "v" then
-		vim.cmd("m .+1")
-		vim.cmd("normal! gv")
-	else
-		vim.cmd("m .+1")
-	end
+  if vim.fn.mode() == "v" then
+    vim.cmd("m .+1")
+    vim.cmd("normal! gv")
+  else
+    vim.cmd("m .+1")
+  end
 end
 
 -- Mapping 'mk' to move the line/selection up
-vim.api.nvim_set_keymap('n', 'mk', '', { noremap = true, silent = true, callback = move_line_up })
+vim.api.nvim_set_keymap("n", "mk", "", { noremap = true, silent = true, callback = move_line_up })
 
 -- Mapping 'mk' in visual mode to move the line/selection up
-vim.api.nvim_set_keymap('v', 'mk', '', { noremap = true, silent = true, callback = move_line_up })
+vim.api.nvim_set_keymap("v", "mk", "", { noremap = true, silent = true, callback = move_line_up })
 
 -- Mapping 'mj' to move the line/selection down
-vim.api.nvim_set_keymap('n', 'mj', '', { noremap = true, silent = true, callback = move_line_down })
+vim.api.nvim_set_keymap("n", "mj", "", { noremap = true, silent = true, callback = move_line_down })
 
 -- Mapping 'mj' in visual mode to move the line/selection down
-vim.api.nvim_set_keymap('v', 'mj', '', { noremap = true, silent = true, callback = move_line_down })
+vim.api.nvim_set_keymap("v", "mj", "", { noremap = true, silent = true, callback = move_line_down })

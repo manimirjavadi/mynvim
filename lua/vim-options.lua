@@ -27,10 +27,10 @@ vim.g.background = "light"
 vim.api.nvim_set_option("clipboard", "unnamed")
 vim.opt.swapfile = false
 
--- Navigate vim panes better
-vim.keymap.set("n", "<c-k>", ":wincmd k<CR>")
-vim.keymap.set("n", "<c-j>", ":wincmd j<CR>")
-vim.keymap.set("n", "<c-h>", ":wincmd h<CR>")
-vim.keymap.set("n", "<c-l>", ":wincmd l<CR>")
+-- TMUX Navigator config
+vim.keymap.set("n", "c-h", ":TmuxNavigateLeft<CR>")
+vim.keymap.set("n", "c-j", ":TmuxNavigateDown<CR>")
+vim.keymap.set("n", "c-k", ":TmuxNavigateUp<CR>")
+vim.keymap.set("n", "c-l", ":TmuxNavigateRight<CR>")
 
 vim.keymap.set("n", "<leader>h", ":nohlsearch<CR>")
