@@ -8,11 +8,13 @@ vim.cmd("set noshowcmd")
 vim.cmd("set cursorline")
 vim.cmd("set scrolloff=10")
 vim.g.mapleader = " "
+vim.g.autoformat = false
 vim.opt.mouse = ""
 vim.opt.splitright = true
 vim.opt.splitbelow = true
 vim.opt.splitkeep = "cursor"
 vim.opt.title = true
+vim.opt.fillchars = { eob = " " }
 vim.opt.autoindent = true
 vim.opt.smartindent = true
 vim.opt.breakindent = true

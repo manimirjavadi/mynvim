@@ -1,1 +1,1 @@
-return { "norcalli/nvim-colorizer.lua" }
+return { "norcalli/nvim-colorizer.lua", opts = { "*" }, buftypes = {} }
