@@ -1,3 +1,14 @@
+return {
+  "craftzdog/solarized-osaka.nvim",
+  config = function()
+    require("solarized-osaka").setup({
+      transparent = true,
+      terminal_colors = true,
+    })
+    vim.cmd([[colorscheme solarized-osaka]])
+  end,
+}
+
 -- return {
 -- 	"rebelot/kanagawa.nvim",
 -- 	config = function()
@@ -99,38 +110,38 @@
 -- 	end,
 -- }
 --
-return {
-	"marko-cerovac/material.nvim",
-	config = function()
-		require("material").setup({
+-- return {
+-- 	"marko-cerovac/material.nvim",
+-- 	config = function()
+-- 		require("material").setup({
 
-			contrast = {
-				terminal = true,
-				sidebars = true,
-				floating_windows = true,
-				cursor_line = true,
-				lsp_virtual_text = true,
-				non_current_windows = true,
-			},
+-- 			contrast = {
+-- 				terminal = true,
+-- 				sidebars = true,
+-- 				floating_windows = true,
+-- 				cursor_line = true,
+-- 				lsp_virtual_text = true,
+-- 				non_current_windows = true,
+-- 			},
 
-			style = {
-				comments = { [[ italic = true ]] },
-				strings = { [[ bold = true ]] },
-				functions = { [[ bold = true ]] },
-			},
+-- 			style = {
+-- 				comments = { [[ italic = true ]] },
+-- 				strings = { [[ bold = true ]] },
+-- 				functions = { [[ bold = true ]] },
+-- 			},
 
-			plugins = {
-				"neo-tree",
-				"nvim-cmp",
-				"telescope",
-			},
+-- 			plugins = {
+-- 				"neo-tree",
+-- 				"nvim-cmp",
+-- 				"telescope",
+-- 			},
 
-			high_visibility = {
-				darker = true,
-			},
-		})
+-- 			high_visibility = {
+-- 				darker = true,
+-- 			},
+-- 		})
 
-		vim.g.material_style = "deep ocean"
-		vim.cmd("colorscheme material")
-	end,
-}
+-- 		vim.g.material_style = "deep ocean"
+-- 		vim.cmd("colorscheme material")
+-- 	end,
+-- }
